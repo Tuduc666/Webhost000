@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+	<title>New User Form</title>
+	<link type="text/css" rel="stylesheet" href="css/adduser.css" />
+	<script src="script/addproperty.js"></script>
+</head>
+<body onload="initPage()"">
+	<div class="wrapper">
+		<h2>New User Form</h2>
+		<form action="">
+			<label>Full Name</label>
+			<input type="text" name="full-name" required placeholder="Full Name" />
+			<label>Address</label>
+			<input type="text" name="address1" required placeholder="Address line 1" />
+			<input type="text" name="address2" required placeholder="Address line 2" />
+			<label>City</label>
+			<select id="city" name="city">
+				<option value="">--- City ---</option>
+				<option value="1">Rego Park</option>
+				<option value="2">Sunnyside</option>
+				<option value="3">Woodside</option>
+			</select>
+			<label>State</label>
+			<select id="state" name="state">
+				<option value="">--- State ---</option>
+				<option value="1">CA</option>
+				<option value="2">NY</option>
+				<option value="3">OR</option>
+			</select>
+			<label>Zip code</label>
+			<input type="text" name="zip" required placeholder="Zip Code" />
+			<label>Phone</label>
+			<input type="text" name="phone" required placeholder="Phone" />			
+			<label>Email</label>
+			<input type="email" name="email" required placeholder="Email" />  <!-- note: user_type = Customer  -->
+			<label>Password</label>
+			<input type="password" name="password" required placeholder="Password" />	
+			<input type="submit" id="submit-button" value="Add" />
+			<button onclick="goBack()"; style="float: right;">Go Back</button>
+		</form>
+	</div>
+	
+</body>
+</html>
+	<!--		
+			
+			<label for="start-date">Start Date</label>
+			<input type="date" id="start-date" name="start-date" placeholder="Start Date" />
+			<label for="title">Title</label>
+
+			<label for="branch">Branch</label>
+			<input type="text" id="branch" name="branch" required placeholder="Branch" />
+			<label for="dept">Dept.</label>
+			<select id="dept" name="dept">
+				<option value="">---Choose a department---</option>
+				<option value="1">Operations</option>
+				<option value="2">Loans</option>
+				<option value="3">Administration</option>
+				<option value="4">IT</option>
+			</select>
+			<label for="manager">Manager</label>
+			<input type="text" id="manager" name="manager" required placeholder="Manager" />     -->
